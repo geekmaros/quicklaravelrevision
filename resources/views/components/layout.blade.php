@@ -11,7 +11,7 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="font-sans antialiased h-full">
+<body class="font-sans antialiased h-full w-full overflow-y-scroll">
 <nav class="bg-gray-800">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-16 items-center justify-between">
@@ -108,8 +108,8 @@
         <h1 class="text-3xl font-bold tracking-tight text-gray-900">{{ $heading }}</h1>
     </div>
 </header>
-<main>
-    <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+<main class="bg-red-300 overflow-scroll">
+    <div class="mx-auto max-w-7xl px-4 py-6  sm:px-6 lg:px-8">
         {{ $slot }}
     </div>
 </main>
