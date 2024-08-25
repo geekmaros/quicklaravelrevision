@@ -22,6 +22,12 @@
                     </li>
                 @endforeach
             </ul>
+
+            <div class="paginate mt-5">
+                {{$jobs->links()}}
+            </div>
+
+            {{--            To manually style this pagination provided by laravel, we need to use the ```php artisan vendor:publish``` command--}}
         </div>
     </div>
 </x-layout>
