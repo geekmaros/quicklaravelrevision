@@ -9,8 +9,14 @@ Route::get('/', function () {
 });
 
 Route::get('/jobs', function () {
+    //we replaced Job::all() with Job::with('employer')->get() so as to eager load the employer relationship
+    // and reduce the number of queries
+
+    //$jobs = Job::with('employer')->get();
+    $jobs = Job::with('employer')->paginate(3);
+
     return view('jobs', [
-        'jobs' => Job::all(),
+        'jobs' => $jobs,
     ]);
 });
 Route::get('/jobs/{id}', function ($id) {
