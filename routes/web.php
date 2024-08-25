@@ -13,7 +13,8 @@ Route::get('/jobs', function () {
     // and reduce the number of queries
 
     //$jobs = Job::with('employer')->get();
-    $jobs = Job::with('employer')->paginate(3);
+    //cursor based pagination is best for large datasets
+    $jobs = Job::with('employer')->simplePaginate(3);
 
     return view('jobs', [
         'jobs' => $jobs,
