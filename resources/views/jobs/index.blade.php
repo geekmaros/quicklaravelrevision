@@ -11,10 +11,10 @@
                     {{--        Create a card that display list of jobs with title and salary --}}
 
                     <li class="bg-white shadow-md w-2/12 mx-4  rounded-lg p-6 mt-6">
-                        <a href="/jobs/{{$job['id']}}">
+                        <a href="/jobs/{{$job->id}}">
 
-                            <h2 class="text-xl font-semibold">{{$job['title']}}</h2>
-                            <p class="text-gray-500">{{$job['salary']}}</p>
+                            <h2 class="text-xl font-semibold">{{$job->title}}</h2>
+                            <p class="text-gray-500">{{$job->salary}}</p>
 
                             <h2 class="text-sm text-teal-500 mt-5 font-semibold">Posted By {{$job->employer->name}}</h2>
                         </a>
