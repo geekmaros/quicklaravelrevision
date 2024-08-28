@@ -79,3 +79,5 @@ Route::get('/jobs', function () {
 ```
 
 laravel new appname
+
+php artisan make:controller ControllerName
