@@ -23,6 +23,9 @@ Using a resource controller like in line 8 is the same as using the following co
 we can pass an optional third argument to the resource method to only register the desired routes
 using the except or only methods passing it as an array e.g except(['create', 'edit'])
 
+we also used the laravel-debugger package to debug our queries
+[Link to Package](https://github.com/barryvdh/laravel-debugbar)
+
 ```
 Route::resource('jobs', JobController::class);
 
@@ -74,3 +77,5 @@ Route::get('/jobs', function () {
     ]);
 });
 ```
+
+laravel new appname
