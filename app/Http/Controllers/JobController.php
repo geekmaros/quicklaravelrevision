@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Job;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
+use Illuminate\Foundation\Application;
 
 class JobController extends Controller
 {
@@ -38,6 +41,11 @@ class JobController extends Controller
         ]);
 
         return redirect('/jobs');
+    }
+
+    public function create(): View|Factory|Application
+    {
+        return view('jobs.create');
     }
 
     public function edit(Job $job)
