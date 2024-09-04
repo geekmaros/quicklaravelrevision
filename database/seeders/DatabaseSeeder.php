@@ -2,8 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\Post;
-use App\Models\Tag;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -26,8 +24,6 @@ class DatabaseSeeder extends Seeder
 
         //   Job::factory(200)->create(); logic moved to the JobnSeeder
         $this->call(JobSeeder::class);
-        Post::factory(200)->create();
-        Tag::factory(200)->create();
 
         // you can create dedicated seeders for each model
         // $this->call([JobSeeder::class, PostSeeder::class, TagSeeder::class]);
