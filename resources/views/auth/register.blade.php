@@ -19,7 +19,7 @@
                             <x-form-label for="last_name">Last Name</x-form-label>
 
                             <div class="mt-2">
-                                <x-form-input id="last_name" name="first_name" placeholder="Doe"
+                                <x-form-input id="last_name" name="last_name" placeholder="Doe"
                                               required></x-form-input>
                                 <x-form-error name="last_name"></x-form-error>
                             </div>
@@ -71,7 +71,7 @@
 
         <div class="mt-6 flex items-center justify-end gap-x-6">
             <button type="button" class="text-sm font-semibold leading-6 text-gray-900">Cancel</button>
-            <x-form-button type="submit">Save</x-form-button>
+            <x-form-button type="submit">Register</x-form-button>
         </div>
     </form>
 
