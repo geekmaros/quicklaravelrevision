@@ -81,3 +81,8 @@ Route::get('/jobs', function () {
 laravel new appname
 
 php artisan make:controller ControllerName
+
+php artisan make:policy JobPolicy
+
+Policy in laravel is used to make policy for accessing a particular resources
+meaning that policy to enable access to view and edit
