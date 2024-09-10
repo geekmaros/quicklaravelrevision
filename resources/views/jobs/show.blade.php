@@ -4,7 +4,7 @@
 
     <div class="flex">
         <div class="bg-white mx-6 shadow-md rounded-lg p-6 mt-6">
-            <h2 class="text-xl font-bold text-large">{{$job->title}}</h2>
+            <h2 class="text-xl text-blue-500 font-bold text-large">{{$job->title}}</h2>
             <p class="text-gray-500"> this job pays <span class="text-green-700 font-bold">{{$job->salary}}</span> per
                 annum</p>
         </div>

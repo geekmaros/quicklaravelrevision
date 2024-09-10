@@ -86,3 +86,12 @@ php artisan make:policy JobPolicy
 
 Policy in laravel is used to make policy for accessing a particular resources
 meaning that policy to enable access to view and edit
+
+php artisan queue:work
+// to start the queue worker
+
+to dipatch a job
+dispatch(new JobName());
+
+and can use a callback function to handle the job like the below
+disaptch()
